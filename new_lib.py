@@ -6,6 +6,7 @@ def clean(currency):
         rounded to two decimal places'''
     currency = currency.replace('$', '')
     currency = currency.replace(',', '')
+    currency = currency.replace('-', '')
     currency = round(float(currency), 2)
     return currency
 
